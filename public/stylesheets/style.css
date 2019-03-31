@@ -1,0 +1,26 @@
+img.img-thumbnail{
+    display: block;
+}
+
+h1.d-inline.float-right{
+    margin: 0;
+}
+
+.card{
+    background-color: #D3D3D3;
+}
+
+.row.justify-content-center.align-items-center form {
+    width: 70%;
+    margin-top: 5%;
+}
+
+.row.justify-content-center.align-items-center form textarea {
+    resize: none;
+    height: 10em;
+}
+
+.col.col-lg-3.col-md-6.col-sm-12 img {
+    height: 10em;
+    width: 100%;
+}
