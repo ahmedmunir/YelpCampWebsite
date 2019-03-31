@@ -1,5 +1,5 @@
 # YelpCampWebsite
-A social network website to help people to share places they visit, and review about these places.
+A social network website to help people to share places they visited with photos and description with friends.
 
 You can create new account, add places you visit with description and how much you paid each night and you cann add comments
 on other places shared by others.
