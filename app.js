@@ -45,7 +45,8 @@ app.use(function(req, res, next){
 });
 
 //DataBase Configuration
-mongoose.connect('mongodb://localhost/yelpcampv2', {useNewUrlParser: true, autoIndex: false});
+// mongoose.connect('mongodb://localhost/yelpcampv2', {useNewUrlParser: true, autoIndex: false});
+mongoose.connect("mongodb://drjempo:Brockliden20@ds229186.mlab.com:29186/yelpcamp", {useNewUrlParser: true, autoIndex: false});
 
 // Rest of configuration for user authentication
 passport.use(User.createStrategy());
