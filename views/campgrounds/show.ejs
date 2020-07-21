@@ -7,30 +7,28 @@
     <p class="alert alert-success"><%=success%></p>
 <% } %>
 
-<div class="container">
-    <div class="container">
-        <div class="row justify-content-center align-items-center">
-            <div class="img-thumbnail p-3">
-                <img src="<%= campground.imagePath %>" alt="<%=campground.name%>" class="img-thumbnail">
-                <h1 class="d-inline"><%= campground.name %></h1> <h1 class="d-inline float-right"><%= campground.price %>$/hr</h1>
-                <p><%=campground.description%></p>
-            <div class="mt-1"></div>
-            <p>Created By: <strong><italic><%=campground.owner.username%></italic></strong></p>
-            <% if(user != undefined) { %>
-                <% if(campground.owner.authorId.equals(user._id)) { %>
-                    <a href="/campgrounds/<%=campground._id%>/edit" class="btn btn-warning">Update</a>
-                    <form class="d-inline" method="POST" action="/campgrounds/<%=campground._id%>?_method=DELETE">
-                        <button type="submit" class="btn btn-danger">Delete</button>
-                    </form>
-                <% } %>
+<div class="container mt-4">
+    <div class="row justify-content-center align-items-center">
+        <div class="img-thumbnail p-3">
+            <img src="<%= campground.imagePath %>" alt="<%=campground.name%>" class="img-thumbnail">
+            <h1 class="d-inline"><%= campground.name %></h1> <h1 class="d-inline float-right"><%= campground.price %>$/hr</h1>
+            <p><%=campground.description%></p>
+        <div class="mt-1"></div>
+        <p>Created By: <strong><italic><%=campground.owner.username%></italic></strong></p>
+        <% if(user != undefined) { %>
+            <% if(campground.owner.authorId.equals(user._id)) { %>
+                <a href="/campgrounds/<%=campground._id%>/edit" class="btn btn-warning">Update</a>
+                <form class="d-inline" method="POST" action="/campgrounds/<%=campground._id%>?_method=DELETE">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
             <% } %>
-            <a href="/campgrounds/<%=campground._id%>/comment/new" class="btn btn-success float-right">Add new comment</a>
-            </div>
+        <% } %>
+        <a href="/campgrounds/<%=campground._id%>/comment/new" class="btn btn-success float-right">Add new comment</a>
         </div>
     </div>
 </div>
 
-<div class="container">
+<div class="container mt-4">
     <div class="card">
         <% campground.comments.forEach(function(comment){ %>
             <div class="card-body">
