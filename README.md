@@ -13,6 +13,6 @@ Technologies Used:
 6-ExpressJS  
 7-MongoDB  
 
-Link for website on Heroku:
+# Link for website on Heroku:
 
 https://yelpcampgroundwebsite.herokuapp.com/
