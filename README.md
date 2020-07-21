@@ -13,5 +13,10 @@ on other places shared by others.
 6-ExpressJS  
 7-MongoDB  
 
+# Installation:
+You can download source code to use website locally or globally.  
+But you need to add **mongodb** credentials at app.js file (line 49).  
+[mlab](https://mlab.com/) provides free mongodb hosting, you can try it.  
+
 # Link for website on Heroku:
 https://yelpcampgroundwebsite.herokuapp.com/
